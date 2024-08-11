@@ -1,4 +1,42 @@
-// Vendor
-// ---------------------------------
+/* VENDOR */
+@import "vendor/normalize.scss";
 
-@import "vendor/normalize";
+/* GLOBAL */
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/variables.scss";
+@import "./common/global.scss";
+
+/* BLOCKS */
+// SUPPORTIVE
+@import "./blocks/primary-title.scss";
+@import "./blocks/primary-button.scss";
+@import "./blocks/primary-slider-button.scss";
+@import "./blocks/visually-hidden.scss";
+
+// STRUCTURE
+@import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-footer.scss";
+
+// SECTIONS
+@import "./blocks/hero.scss";
+@import "./blocks/tours.scss";
+@import "./blocks/training.scss";
+@import "./blocks/about.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/adv.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/form.scss";
+@import "./blocks/contacts.scss";
+
+// SUBBLOCKS
+@import "./blocks/logo.scss";
+@import "./blocks/promo-slide.scss";
+@import "./blocks/tour-slide.scss";
+@import "./blocks/trainer-card.scss";
+@import "./blocks/review-slide.scss";
+@import "./blocks/adv-slide.scss";
+@import "./blocks/form-field.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/socials.scss";

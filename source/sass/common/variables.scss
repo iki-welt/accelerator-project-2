@@ -1,0 +1,17 @@
+// VIEWPORTS
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// FONTS
+$primary-font: "Montserrat", "Arial", sans-serif;
+
+// COLORS
+$base-dark: #2d383f;
+$base-light: #ffffff;
+$base-accent: #0266c1;
+// overlay colors
+$burger-overlay: rgba(45, 56, 63, 0.6);
+$promo-ovelay: linear-gradient(45deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
+$tour-ovelay: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.6) 100%);
+
