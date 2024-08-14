@@ -1,1 +1,13 @@
-// .primary-button {}
+.primary-button {
+  display: block;
+  width: fit-content;
+  padding: 20px;
+  color: $base-light;
+  text-align: center;
+  background-color: $base-accent;
+  border: none;
+  cursor: pointer;
+
+  @include link-default;
+  @include font-set(16px, 16px, 500);
+}

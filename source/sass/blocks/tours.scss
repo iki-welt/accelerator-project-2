@@ -8,4 +8,16 @@
 // }
 // .tours__swiper-wrapper {}
 // .tours__slide {}
-// .tours__link {}
+
+.tours__link {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  @include link-default;
+  @include font-set(14px, 14px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

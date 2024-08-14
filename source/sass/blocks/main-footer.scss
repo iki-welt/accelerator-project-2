@@ -1,8 +1,46 @@
-// .main-footer {}
+.main-footer {
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 // .main-footer__logo {}
-// .main-footer__nav {}
+.main-footer__nav {
+  @include list-default;
+}
+
 // .main-footer__item {}
-// .main-footer__link {}
-// .main-footer__phone {}
-// .main-footer__social-list {}
-// .main-footer__privacy {}
+.main-footer__link {
+  @include link-default;
+}
+
+.main-footer__phone {
+  @include link-default;
+  @include font-set(14px, 14px, 600);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.main-footer__social-list {
+  @include list-default;
+}
+
+.main-footer__privacy {
+  @include link-default;
+  @include font-set(12px, 12px, 300);
+}

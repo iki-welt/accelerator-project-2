@@ -1,15 +1,32 @@
-// .tour-slide {}
+.tour-slide {
+  color: $base-light;
+  background-color: $burger-overlay;
+  @include font-set(12px, 12px, 500);
+}
+
 // .tour-slide__about-list {}
+
 // .tour-slide__about-item {}
-// .tour-slide__description {
-  // &--location {}
+.tour-slide__description {
+  &--location {
+    background-color: $base-accent;
+  }
   // &--days {}
   // &--nights {}
-// }
-// .tour-slide__title {}
+}
+.tour-slide__title {
+  @include font-set(24px, 28px, 700);
+}
+
 // .tour-slide__requirements-list {}
+
 // .tour-slide__requirements-item {}
-// .tour-slide__requirement-term {}
-// .tour-slide__requirement {
+
+.tour-slide__requirement-term {
+  font-weight: 300;
+}
+
+.tour-slide__requirement {
+  font-weight: 700;
   // &--difficulty {}
-// }
+}

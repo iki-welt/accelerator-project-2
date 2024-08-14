@@ -1,10 +1,38 @@
 .form {
-  background-color: $base-accent;
+  color: $base-light;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: $burger-overlay;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 // .form__container {}
-// .form h2 {}
+.form h2 {
+  @include font-set(22px, 22px, 800);
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
 // .form p {}
 // .form__fields {}
-// .form__list {}
+.form__list {
+  @include list-default;
+}
 // .form__item {}
 // .form__submit {}

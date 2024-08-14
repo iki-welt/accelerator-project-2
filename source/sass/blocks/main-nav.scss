@@ -1,4 +1,25 @@
-// .main-nav {}
-// .main-nav__list {}
+.main-nav {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  @include font-set(14px, 14px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: normal;
+  }
+}
+
+.main-nav__list {
+  @include list-default;
+}
+
 // .main-nav__item {}
-// .main-nav__link {}
+.main-nav__link {
+  @include link-default;
+}

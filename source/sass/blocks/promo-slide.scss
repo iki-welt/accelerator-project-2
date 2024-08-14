@@ -1,6 +1,33 @@
-// .promo-slide {}
-// .promo-slide h2 {}
+.promo-slide {
+  color: $base-light;
+  background-color: $burger-overlay;
+  @include font-set(15px, 20px, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+.promo-slide h2 {
+  @include font-set(26px, 26px, 800);
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 77px;
+    line-height: 77px;
+  }
+}
+
 // .promo-slide p {}
 // .promo-slide__link {}
-// .promo-slide__about-list {}
+.promo-slide__about-list {
+  @include list-default;
+  @include font-set(12px, 16px, 400);
+}
+
 // .promo-slide__about-item {}

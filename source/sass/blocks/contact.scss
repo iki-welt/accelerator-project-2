@@ -1,4 +1,30 @@
 // .contact {}
-// .contact__name {}
-// .contact__value {}
-// .contact__link {}
+.contact__name {
+  @include font-set(14px, 14px, 600);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.contact__value {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.contact__link {
+  @include link-default;
+}

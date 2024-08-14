@@ -1,5 +1,11 @@
-// .trainer-card {}
+.trainer-card {
+  @include font-set(12px, 16px, 400);
+}
 // .trainer-card__photo {}
-// .trainer-card h4 {}
+
+.trainer-card h4 {
+  @include font-set(14px, 16px, 700);
+}
+
 // .trainer-card p {}
 // .trainer-card__link {}

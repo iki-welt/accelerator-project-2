@@ -1,6 +1,24 @@
-// .review-slide {}
+.review-slide {
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 // .review-slide__photo {}
 // .review-slide__content {}
 // .review-slide__content blockquote {}
-// .review-slide__author {}
-// .review-slide__about-author {}
+.review-slide__author {
+  @include font-set(12px, 12px, 700);
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+.review-slide__about-author {
+  @include font-set(12px, 12px, 300);
+}

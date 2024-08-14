@@ -1,9 +1,29 @@
-// .adv-slide {
+.adv-slide {
+  font-size: 12px;
+  line-height: 18px;
+
 //  &--safe {}
 //  &--awareness {}
 //  &--equipment {}
 //  &--routes {}
 //  &--nature {}
-// }
-// .adv-slide h3 {}
+@media (min-width: $tablet-width) {
+  font-size: 14px;
+  line-height: 22px;
+}
+}
+
+.adv-slide h3 {
+  @include font-set(14px, 14px, 600);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
 // .adv-slide p {}
