@@ -1,4 +1,6 @@
 .primary-title {
+  margin: 0;
+
   @include font-set(22px, 22px, 800);
 
   @media (min-width: $tablet-width) {

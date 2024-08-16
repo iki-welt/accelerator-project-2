@@ -39,6 +39,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     gap: 30px;
