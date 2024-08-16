@@ -1,0 +1,26 @@
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  color: $base-light;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger__open-icon {
+  display: block;
+  &--menu-open {
+    display: none;
+  }
+}
+
+.burger__close-icon {
+  display: none;
+
+  &--menu-open {
+    display: block;
+  }
+}

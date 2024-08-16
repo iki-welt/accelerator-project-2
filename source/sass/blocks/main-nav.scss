@@ -1,7 +1,12 @@
 .main-nav {
+  display: none;
   text-transform: uppercase;
   letter-spacing: 4px;
   @include font-set(14px, 14px, 700);
+
+  &--is-open {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -16,10 +21,22 @@
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
   @include list-default;
+
+  margin-top: 30px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    gap: 26px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
 }
 
-// .main-nav__item {}
 .main-nav__link {
   @include link-default;
 }
