@@ -1,15 +1,39 @@
 .primary-title {
+  position: relative;
   margin: 0;
 
   @include font-set(22px, 22px, 800);
 
+  &::before {
+    content: "Авава";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    color: $base-dark;
+    opacity: 0.03;
+
+    @include font-set(26px, 26px, 800);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
+
+    &::before {
+      font-size: 40px;
+      line-height: 40px;
+      bottom: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+
+    &::before {
+      font-size: 55px;
+      line-height: 55px;
+      bottom: 0;
+    }
   }
 }

@@ -1,7 +1,29 @@
 // .tours {}
-// .tours__container {}
-// .tours__title {}
-// .tours__swiper {}
+.tours__container {
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+
+.tours__title {
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.tours__swiper {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
 // .tours__swiper-button {
   // &--prev {}
   // &--next {}
@@ -10,6 +32,11 @@
 // .tours__slide {}
 
 .tours__link {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
   text-transform: uppercase;
   letter-spacing: 4px;
 
