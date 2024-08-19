@@ -1,19 +1,71 @@
 .adv-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  padding: 20px 10px;
+
   font-size: 12px;
   line-height: 18px;
+  text-align: center;
 
-//  &--safe {}
-//  &--awareness {}
-//  &--equipment {}
-//  &--routes {}
-//  &--nature {}
-@media (min-width: $tablet-width) {
-  font-size: 14px;
-  line-height: 22px;
-}
+  border: 1px solid $accent-border-color;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 20px;
+    background-size: 42px 42px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--safe::before {
+    background-image: url("/__spritemap#sprite-shield-view");
+  }
+
+   &--awareness::before {
+    background-image: url("/__spritemap#sprite-crown-view");
+   }
+
+   &--equipment::before {
+    background-image: url("/__spritemap#sprite-boots-view");
+   }
+
+   &--routes::before {
+    background-image: url("/__spritemap#sprite-path-view");
+   }
+
+   &--nature::before {
+    background-image: url("/__spritemap#sprite-leaf-view");
+   }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    padding: 30px 20px;
+    font-size: 14px;
+    line-height: 22px;
+
+    &::before {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 20px;
+
+    &::before {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .adv-slide h3 {
+  margin: 0;
+  margin-bottom: 15px;
+
   @include font-set(14px, 14px, 600);
 
   @media (min-width: $tablet-width) {
@@ -26,4 +78,7 @@
     line-height: 18px;
   }
 }
-// .adv-slide p {}
+
+.adv-slide p {
+  margin: 0;
+}

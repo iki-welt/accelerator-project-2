@@ -1,24 +1,72 @@
 .review-slide {
+  display: grid;
+  gap: 20px;
+  width: 290px;
+  padding: 20px;
   font-size: 12px;
   line-height: 18px;
 
+  box-shadow: 0px 0px 20px rgba(28, 51, 116, 0.10);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 186px 299px;
+    gap: 30px;
+    width: 565px;
+    align-items: center;
+  }
+
   @media (min-width: $desktop-width) {
+    grid-template-columns: 258px 352px;
+    width: 700px;
     font-size: 14px;
     line-height: 22px;
   }
 }
+
 // .review-slide__photo {}
-// .review-slide__content {}
-// .review-slide__content blockquote {}
+
+.review-slide__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-slide__content blockquote {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2px;
+  }
+}
+
+.review-slide__content blockquote p {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .review-slide__author {
+  margin: 0;
+  margin-bottom: 8px;
+
   @include font-set(12px, 12px, 700);
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+
     font-size: 13px;
     line-height: 13px;
   }
 }
 
 .review-slide__about-author {
+  margin: 0;
+
   @include font-set(12px, 12px, 300);
 }
