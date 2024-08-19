@@ -1,11 +1,46 @@
 .trainer-card {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  gap: 15px;
+  width: 290px;
+  padding: 15px;
+  border: 1px solid $accent-border-color;
+
   @include font-set(12px, 16px, 400);
+
+  @media (min-width: $tablet-width) {
+    width: 213px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
 }
-// .trainer-card__photo {}
+
+.trainer-card__photo {
+  grid-column: 1/-1;
+}
 
 .trainer-card h4 {
+  width: min-content;
+  margin: 0;
+
   @include font-set(14px, 16px, 700);
 }
 
-// .trainer-card p {}
-// .trainer-card__link {}
+.trainer-card p {
+  grid-column: 1/-1;
+  margin: 0;
+}
+
+.trainer-card__link {
+  align-self: start;
+  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  color: $base-dark;
+  border: 1px solid $base-border-color;
+}
