@@ -1,4 +1,58 @@
-// .tours {}
+.tours {
+  background-image: url("../../img/decoration/clouds-1-s.png");
+  background-size: 141px 595px;
+  background-repeat: no-repeat;
+  background-position: right top 10px;
+
+  @supports (background-image: url("../../img/decoration/clouds-1-s.webp")) {
+    background-image: url("../../img/decoration/clouds-1-s.webp");
+  }
+
+  @media (resolution >=2dppx) {
+    background-image: url("../../img/decoration/clouds-1-2x-s.png");
+
+    @supports (background-image: url("../../img/decoration/clouds-1-2x-s.webp")) {
+      background-image: url("../../img/decoration/clouds-1-2x-s.webp");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/decoration/clouds-1-m.png);
+    background-size: 425px 1630px;
+    background-position: right top -92px;
+
+    @supports (background-image: url("../../img/decoration/clouds-1-m.webp")) {
+      background-image: url("../../img/decoration/clouds-1-m.webp");
+    }
+
+    @media (resolution >=2dppx) {
+      background-image: url("../../img/decoration/clouds-1-2x-m.png");
+
+      @supports (background-image: url("../../img/decoration/clouds-1-2x-m.webp")) {
+        background-image: url("../../img/decoration/clouds-1-2x-m.webp");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/decoration/clouds-1-l.png);
+    background-size: 602px 1630px;
+    background-position: right top -126px;
+
+    @supports (background-image: url("../../img/decoration/clouds-1-l.webp")) {
+      background-image: url("../../img/decoration/clouds-1-l.webp");
+    }
+
+    @media (resolution >=2dppx) {
+      background-image: url("../../img/decoration/clouds-1-2x-l.png");
+
+      @supports (background-image: url("../../img/decoration/clouds-1-2x-l.webp")) {
+        background-image: url("../../img/decoration/clouds-1-2x-l.webp");
+      }
+    }
+  }
+}
+
 .tours__container {
   padding-top: 36px;
   padding-bottom: 20px;
@@ -25,8 +79,8 @@
 }
 
 // .tours__swiper-button {
-  // &--prev {}
-  // &--next {}
+// &--prev {}
+// &--next {}
 // }
 // .tours__swiper-wrapper {}
 // .tours__slide {}

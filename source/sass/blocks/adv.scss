@@ -1,4 +1,28 @@
-// .adv {}
+.adv {
+  @media (min-width: $tablet-width) {
+    background-image: url(../../img/decoration/clouds-3-m.png);
+    background-size: cover;
+    background-position: left top 166px;
+    background-repeat: no-repeat;
+
+    @supports (background-image: url("../../img/decoration/clouds-3-m.webp")) {
+      background-image: url("../../img/decoration/clouds-3-m.webp");
+    }
+
+    @media (resolution >=2dppx) {
+      background-image: url("../../img/decoration/clouds-3-2x-m.png");
+
+      @supports (background-image: url("../../img/decoration/clouds-3-2x-m.webp")) {
+        background-image: url("../../img/decoration/clouds-3-2x-m.webp");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
 .adv__container {
   padding-top: 36px;
   padding-bottom: 20px;

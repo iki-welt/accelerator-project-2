@@ -1,19 +1,67 @@
 .main-footer {
   line-height: 14px;
+  border-top: 1px solid $lighter-border-color;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 16px;
   }
 }
-// .main-footer__logo {}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 142px 1fr;
+    gap: 34px 0;
+    justify-items: center;
+    padding-top: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px 1fr 200px;
+    gap: 22px 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.main-footer__logo {
+  @media (min-width: $desktop-width) {
+    padding: 9px 29px;
+  }
+}
+
 .main-footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px 50px;
+  justify-items: center;
+  grid-auto-flow: column;
+
   @include list-default;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+  }
 }
 
 // .main-footer__item {}
@@ -22,25 +70,30 @@
 }
 
 .main-footer__phone {
-  @include link-default;
-  @include font-set(14px, 14px, 600);
+  display: none;
 
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 16px;
-  }
+  @include link-default;
+  @include font-set(18px, 18px, 600);
 
   @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 18px;
+    display: block;
+    justify-self: end;
   }
 }
 
 .main-footer__social-list {
   @include list-default;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .main-footer__privacy {
   @include link-default;
   @include font-set(12px, 12px, 300);
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }

@@ -1,8 +1,16 @@
-// .socials {}
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 // .socials__item {}
 .socials__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
+  color: $base-dark;
   border: 1px solid $base-border-color;
 }
