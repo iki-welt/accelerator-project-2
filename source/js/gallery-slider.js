@@ -1,7 +1,7 @@
 import { Swiper } from './vendor/swiper';
 import { Navigation } from './vendor/modules';
 
-const reviewsSlider = new Swiper ('.gallery__swiper', {
+const gallerySlider = new Swiper ('.gallery__swiper', {
   modules: [ Navigation ],
   direction: 'horizontal',
   loop: true,
@@ -28,4 +28,4 @@ const reviewsSlider = new Swiper ('.gallery__swiper', {
   },
 });
 
-export { reviewsSlider };
+export { gallerySlider };
