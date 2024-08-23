@@ -1,16 +1,30 @@
 .main-nav {
+  position: static;
   display: none;
   text-transform: uppercase;
   letter-spacing: 4px;
   @include font-set(14px, 14px, 700);
 
   &--is-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
     display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: $base-accent;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+
+    &--is-open {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -25,11 +39,10 @@
   display: flex;
   flex-direction: column;
   gap: 22px;
-
-  @include list-default;
-
+  padding: 0;
   margin-top: 30px;
   margin-bottom: 45px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     gap: 26px;

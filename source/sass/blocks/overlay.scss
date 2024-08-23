@@ -1,12 +1,12 @@
 .overlay {
-  display: none;
+  height: auto;
 
   &--is-open {
     position: absolute;
-    display: block;
-    top: 0;
+    top: 100%;
     left: 0;
-    height: 100%;
+    z-index: 2;
+    height: 100vh;
     width: 100vw;
     background-color: $burger-overlay;
   }
