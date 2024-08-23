@@ -1,4 +1,22 @@
-// .primary-slider-button {
-  // &--prev {}
-  // &--next {}
-// }
+.primary-slider-button {
+  width: 37px;
+  height: 35px;
+  color: $base-light;
+  background-color: $base-accent;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &--disabled {
+    background-color: #999999;
+  }
+
+  &::after {
+    content: unset;
+  }
+}
+
+.primary-slider-button svg {
+  width: 14px;
+}

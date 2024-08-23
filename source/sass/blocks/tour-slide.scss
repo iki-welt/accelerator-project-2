@@ -1,6 +1,10 @@
 .tour-slide {
   position: relative;
-  padding: 224px 20px 30px;
+  display: flex;
+  align-items: end;
+  width: 290px;
+  height: 416px;
+  padding: 30px 20px;
   color: $base-light;
   background-color: $burger-overlay;
 

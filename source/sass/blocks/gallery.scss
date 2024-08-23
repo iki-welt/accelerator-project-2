@@ -44,7 +44,7 @@
 
   @media (min-width: $tablet-width) {
     width: 420px;
-    margin-bottom: 21px;
+    margin-bottom: -35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,10 +53,28 @@
   }
 }
 
-// .gallery__swiper {}
-// .gallery__button {
-  // &--prev {}
-  // &--next {}
-// }
+.gallery__swiper {
+  @media (min-width: $tablet-width) {
+    padding-top: 56px;
+  }
+}
+
+.gallery__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    top: 21px;
+    right: 0;
+
+    &--prev {
+      left: unset;
+      right: 41px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
 // .gallery__swiper-wrapper {}
-// .gallery__slide {}

@@ -61,7 +61,7 @@
   <main class="page-main">
     <div class="overlay"></div>
     <!-- add class overlay--is-open -->
-    <section data-test="hero" class="hero">
+    <!-- <section data-test="hero" class="hero">
       <h1 class="visually-hidden">Организация походов в горы 'Lifetour'.</h1>
       <div class="hero__swiper swiper">
         <div class="hero__swiper-wrapper swiper-wrapper">
@@ -157,19 +157,25 @@
 
         <div class="hero__pagination swiper-pagination"></div>
       </div>
-    </section>
+    </section> -->
 
     <section data-test="tours" class="tours" id="tours">
       <div class="tours__container container">
         <h2 class="tours__title primary-title">Ближайшие туры</h2>
 
         <div class="tours__swiper swiper">
-          <div
-            class="tours__swiper-button tours__swiper-button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
-          </div>
-          <div
-            class="tours__swiper-button tours__swiper-button--next primary-slider-button primary-slider-button--next swiper-button-next">
-          </div>
+        <div
+        class="tours__swiper-button tours__swiper-button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+        <svg width="14" height="9">
+          <use href="/__spritemap#sprite-arrow"></use>
+        </svg>
+      </div>
+      <div
+        class="tours__swiper-button tours__swiper-button--next primary-slider-button primary-slider-button--next swiper-button-next">
+        <svg width="14" height="9">
+          <use href="/__spritemap#sprite-arrow"></use>
+        </svg>
+      </div>
 
           <div class="tours__swiper-wrapper swiper-wrapper">
 
@@ -383,12 +389,20 @@
           Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
 
         <h3 class="training__subtitle">Наши инструкторы</h3>
+
         <div class="training__swiper swiper">
+
           <div
             class="training__button training__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
           <div
             class="training__button training__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
 
           <div class="training__swiper-wrapper swiper-wrapper">
@@ -602,9 +616,15 @@
         <div class="reviews__swiper swiper">
           <div
             class="reviews__button reviews__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
           <div
             class="reviews__button reviews__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
 
           <div class="reviews__swiper-wrapper swiper-wrapper">
@@ -779,9 +799,15 @@
 
           <div
             class="adv__button adv__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
           <div
             class="adv__button adv__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -793,13 +819,20 @@
         <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел
           нашего сайта.</p>
 
-        <div class="gallery__swiper swiper">
+          <div class="gallery__swiper swiper">
           <div
             class="gallery__button gallery__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
           <div
             class="gallery__button gallery__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            <svg width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
           </div>
+
           <div class="gallery__swiper-wrapper swiper-wrapper">
             <div class="gallery__slide swiper-slide">
               <picture>
@@ -821,34 +854,17 @@
             <div class="gallery__slide swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/content/galery-2-l.webp 1x, img/content/galery-2-2x-l.webp 2x" width="284" height="223">
+                  srcset="img/content/galery-2-3-l.webp 1x, img/content/galery-2-3-2x-l.webp 2x" width="284" height="463">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/galery-2-m.webp 1x, img/content/galery-2-2x-m.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/content/galery-2-s.webp 1x, img/content/galery-2-2x-s.webp 2x"
-                  width="157" height="125">
+                  srcset="img/content/galery-2-3-m.webp 1x, img/content/galery-2-3-2x-m.webp 2x" width="252" height="418">
+                <source type="image/webp" srcset="img/content/galery-2-3-s.webp 1x, img/content/galery-2-3-2x-s.webp 2x"
+                  width="157" height="266">
                 <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/content/galery-2-l.jpg 1x, img/content/galery-2-2x-l.jpg 2x" width="284" height="223">
+                  srcset="img/content/galery-2-3-l.jpg 1x, img/content/galery-2-3-2x-l.jpg 2x" width="284" height="463">
                 <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/content/galery-2-m.jpg 1x, img/content/galery-2-2x-m.jpg 2x" width="252" height="206">
-                <img src="img/content/galery-2-s.jpg" srcset="img/content/galery-2-2x-s.jpg 2x" width="157" height="125"
+                  srcset="img/content/galery-2-3-m.jpg 1x, img/content/galery-2-3-2x-m.jpg 2x" width="252" height="418">
+                <img src="img/content/galery-2-3-s.jpg" srcset="img/content/galery-2-3-2x-s.jpg 2x" width="157" height="266"
                   alt="Посиделки у костра. Джангитау, 2020 год.">
-              </picture>
-            </div>
-
-            <div class="gallery__slide swiper-slide">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/content/galery-3-l.webp 1x, img/content/galery-3-2x-l.webp 2x" width="284" height="223">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/galery-3-m.webp 1x, img/content/galery-3-2x-m.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/content/galery-3-s.webp 1x, img/content/galery-3-2x-s.webp 2x"
-                  width="157" height="125">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/content/galery-3-l.jpg 1x, img/content/galery-3-2x-l.jpg 2x" width="284" height="223">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/content/galery-3-m.jpg 1x, img/content/galery-3-2x-m.jpg 2x" width="252" height="206">
-                <img src="img/content/galery-3-s.jpg" srcset="img/content/galery-3-2x-s.jpg 2x" width="157" height="125"
-                  alt="Осенний Катын-Тау">
               </picture>
             </div>
 
@@ -872,34 +888,17 @@
             <div class="gallery__slide swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/content/galery-5-l.webp 1x, img/content/galery-5-2x-l.webp 2x" width="284" height="223">
+                  srcset="img/content/galery-5-6-l.webp 1x, img/content/galery-5-6-2x-l.webp 2x" width="284" height="463">
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/galery-5-m.webp 1x, img/content/galery-5-2x-m.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/content/galery-5-s.webp 1x, img/content/galery-5-2x-s.webp 2x"
-                  width="157" height="125">
+                  srcset="img/content/galery-5-6-m.webp 1x, img/content/galery-5-6-2x-m.webp 2x" width="252" height="418">
+                <source type="image/webp" srcset="img/content/galery-5-6-s.webp 1x, img/content/galery-5-6-2x-s.webp 2x"
+                  width="157" height="266">
                 <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/content/galery-5-l.jpg 1x, img/content/galery-5-2x-l.jpg 2x" width="284" height="223">
+                  srcset="img/content/galery-5-6-l.jpg 1x, img/content/galery-5-6-2x-l.jpg 2x" width="284" height="463">
                 <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/content/galery-5-m.jpg 1x, img/content/galery-5-2x-m.jpg 2x" width="252" height="206">
-                <img src="img/content/galery-5-s.jpg" srcset="img/content/galery-5-2x-s.jpg 2x" width="157" height="125"
+                  srcset="img/content/galery-5-6-m.jpg 1x, img/content/galery-5-6-2x-m.jpg 2x" width="252" height="418">
+                <img src="img/content/galery-5-6-s.jpg" srcset="img/content/galery-5-6-2x-s.jpg 2x" width="157" height="266"
                   alt="Зимний поход.">
-              </picture>
-            </div>
-
-            <div class="gallery__slide swiper-slide">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/content/galery-6-l.webp 1x, img/content/galery-6-2x-l.webp 2x" width="284" height="223">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/content/galery-6-m.webp 1x, img/content/galery-6-2x-m.webp 2x" width="252" height="206">
-                <source type="image/webp" srcset="img/content/galery-6-s.webp 1x, img/content/galery-6-2x-s.webp 2x"
-                  width="157" height="125">
-                <source type="image/jpeg" media="(min-width: 1440px)"
-                  srcset="img/content/galery-6-l.jpg 1x, img/content/galery-6-2x-l.jpg 2x" width="284" height="223">
-                <source type="image/jpeg" media="(min-width: 768px)"
-                  srcset="img/content/galery-6-m.jpg 1x, img/content/galery-6-2x-m.jpg 2x" width="252" height="206">
-                <img src="img/content/galery-6-s.jpg" srcset="img/content/galery-6-2x-s.jpg 2x" width="157" height="125"
-                  alt="Ночёка под звёдным небом">
               </picture>
             </div>
 
