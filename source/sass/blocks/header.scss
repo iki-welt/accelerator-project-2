@@ -61,6 +61,31 @@
   @include link-default;
   @include font-set(14px, 14px, 600);
 
+  &:hover {
+    color: $light-05;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $base-dark;
+    outline: none;
+  }
+
+  &:active {
+    color: $darker-accent;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $base-disabled;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     font-size: 16px;

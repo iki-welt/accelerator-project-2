@@ -144,12 +144,31 @@
   }
 }
 
-// .form__item {}
-
 .form__submit {
   width: 100%;
 
   @media (min-width: $desktop-width) {
     width: 180px;
+  }
+}
+
+.form__error {
+  display: none;
+
+  &--is-error {
+    display: block;
+    width: 100%;
+    padding: 17px 15px;
+    color: $darker-accent;
+    background-color: $second-gray;
+    border: 1px solid $darker-accent;
+
+    @media (min-width: $desktop-width) {
+      width: 360px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 960px;
+    }
   }
 }

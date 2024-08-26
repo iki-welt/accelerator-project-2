@@ -163,13 +163,13 @@
 
         <div class="tours__swiper swiper">
         <div
-        class="tours__swiper-button tours__swiper-button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+        class="tours__swiper-button tours__swiper-button--prev primary-slider-button primary-slider-button--prev swiper-button-prev" tabindex="0">
         <svg width="14" height="9">
           <use href="/__spritemap#sprite-arrow"></use>
         </svg>
       </div>
       <div
-        class="tours__swiper-button tours__swiper-button--next primary-slider-button primary-slider-button--next swiper-button-next">
+        class="tours__swiper-button tours__swiper-button--next primary-slider-button primary-slider-button--next swiper-button-next" tabindex="0">
         <svg width="14" height="9">
           <use href="/__spritemap#sprite-arrow"></use>
         </svg>
@@ -391,13 +391,13 @@
         <div class="training__swiper swiper">
 
           <div
-            class="training__button training__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            class="training__button training__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </div>
           <div
-            class="training__button training__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            class="training__button training__button--next primary-slider-button primary-slider-button--next swiper-button-next" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
@@ -613,13 +613,13 @@
 
         <div class="reviews__swiper swiper">
           <div
-            class="reviews__button reviews__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            class="reviews__button reviews__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </div>
           <div
-            class="reviews__button reviews__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            class="reviews__button reviews__button--next primary-slider-button primary-slider-button--next swiper-button-next" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
@@ -808,13 +808,13 @@
           </div>
 
           <div
-            class="adv__button adv__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            class="adv__button adv__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </div>
           <div
-            class="adv__button adv__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            class="adv__button adv__button--next primary-slider-button primary-slider-button--next swiper-button-next" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
@@ -831,13 +831,13 @@
 
           <div class="gallery__swiper swiper">
           <div
-            class="gallery__button gallery__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev">
+            class="gallery__button gallery__button--prev primary-slider-button primary-slider-button--prev swiper-button-prev" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </div>
           <div
-            class="gallery__button gallery__button--next primary-slider-button primary-slider-button--next swiper-button-next">
+            class="gallery__button gallery__button--next primary-slider-button primary-slider-button--next swiper-button-next" tabindex="0">
             <svg width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
@@ -942,20 +942,19 @@
           <ul class="form__list">
 
             <li class="form__item form-field form-field--phone">
-              <input class="form-field__inp" type="tel" id="client-phone" name="client-phone" placeholder="" required>
-              <label class="form-field__name" for="client-phone">Телефон</label>
-              <p class="form-field__error" style="display: none"></p>
+              <input class="form-field__inp" type="tel" id="client-phone" name="client-phone" placeholder="+7 (000)-000-00-00" required>
+              <label class="form-field__name form-field__name--phone" for="client-phone">Телефон</label>
             </li>
 
             <li class="form__item form-field form-field--email">
-              <input class="form-field__inp" type="email" id="client-email" name="client-email" placeholder="" required>
-              <label class="form-field__name" for="client-email">Email</label>
-              <p class="form-field__error" style="display: none"></p>
+              <input class="form-field__inp" type="text" id="client-email" name="client-email" placeholder="youre@mail.ru" required>
+              <label class="form-field__name form-field__name--email" for="client-email">Email</label>
             </li>
 
           </ul>
           <button class="form__submit primary-button" type="submit">Отправить</button>
         </form>
+        <p class="form__error"></p>
       </div>
     </section>
   </main>

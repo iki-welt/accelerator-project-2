@@ -91,4 +91,29 @@
 
 .contact__link {
   @include link-default;
+
+  &:hover {
+    color: $accent-border-color;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $base-accent;
+    outline: none;
+  }
+
+  &:active {
+    color: $darker-accent;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $base-disabled;
+    outline: none;
+  }
 }

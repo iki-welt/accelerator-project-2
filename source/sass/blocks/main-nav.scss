@@ -55,10 +55,60 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
-    gap: 30px;
+    gap: 20px;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &:has(.main-nav__link:hover) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: $base-light;
+      }
+    }
   }
 }
 
 .main-nav__link {
   @include link-default;
+
+  &:hover {
+    color: $base-light;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $base-light;
+    outline: 1px solid $base-light;
+    outline-offset: 3px 5px;
+  }
+
+  &:active {
+    color: $darker-accent;
+    outline: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $base-disabled;
+    outline: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 5px;
+  }
 }
