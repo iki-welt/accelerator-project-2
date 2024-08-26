@@ -66,9 +66,7 @@
 }
 
 .adv__swiper-wrapper {
-  @media (min-width: $desktop-width) {
-
-  }
+  @media (min-width: $desktop-width) {}
 }
 
 .adv__swiper--non-slider .adv__swiper-wrapper {
@@ -85,12 +83,25 @@
 .adv__swiper--non-slider .adv__slide {
   width: 290px;
 
+  &:last-child,
+  &:nth-last-child(2) {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 324px;
 
-    &:last-child {
+    &:nth-last-child(3) {
       grid-column: span 2;
       justify-self: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &:last-child,
+    &:nth-last-child(2) {
+      display: flex;
     }
   }
 }
