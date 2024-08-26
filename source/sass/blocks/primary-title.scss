@@ -5,7 +5,7 @@
   @include font-set(22px, 22px, 800);
 
   &::before {
-    content: "Авава";
+    content: attr(data-text);
     position: absolute;
     left: 0;
     bottom: 12px;

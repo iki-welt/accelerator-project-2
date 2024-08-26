@@ -52,6 +52,13 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
+    text-align: center;
+
+    &::before {
+      bottom: 15px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }
 
