@@ -16,7 +16,7 @@ body {
   font-family: $primary-font;
 
   background-color: $base-light;
-// text m
+
   @include font-set(14px, 20px, 400);
 
   @media (min-width: $tablet-width) {

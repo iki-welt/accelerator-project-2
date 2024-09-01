@@ -6,6 +6,7 @@
   width: 290px;
   height: 356px;
   padding: 15px;
+  background-color: $base-light;
   border: 1px solid $accent-border-color;
 
   @include font-set(12px, 16px, 400);

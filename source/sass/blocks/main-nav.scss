@@ -3,6 +3,7 @@
   display: none;
   text-transform: uppercase;
   letter-spacing: 4px;
+
   @include font-set(14px, 14px, 700);
 
   &--is-open {

@@ -27,21 +27,21 @@
     background-image: url("/__spritemap#sprite-shield-view");
   }
 
-   &--awareness::before {
+  &--awareness::before {
     background-image: url("/__spritemap#sprite-crown-view");
-   }
+  }
 
-   &--equipment::before {
+  &--equipment::before {
     background-image: url("/__spritemap#sprite-boots-view");
-   }
+  }
 
-   &--routes::before {
+  &--routes::before {
     background-image: url("/__spritemap#sprite-path-view");
-   }
+  }
 
-   &--nature::before {
+  &--nature::before {
     background-image: url("/__spritemap#sprite-leaf-view");
-   }
+  }
 
   @media (min-width: $tablet-width) {
     width: 324px;

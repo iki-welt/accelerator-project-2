@@ -60,7 +60,7 @@
         background-image: url("../../img/decoration/photocards-m.webp");
       }
 
-      @media (resolution >=2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../../img/decoration/photocards-x2-m.png");
 
         @supports (background-image: url("../../img/decoration/photocards-x2-m.webp")) {
@@ -88,7 +88,7 @@
         background-image: url("../../img/decoration/photocards-m.webp");
       }
 
-      @media (resolution >=2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../../img/decoration/photocards-x2-m.png");
 
         @supports (background-image: url("../../img/decoration/photocards-x2-m.webp")) {

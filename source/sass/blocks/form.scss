@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../../img/decoration/form-s.jpg);
+  background-image: url("../../img/decoration/form-s.jpg");
 
   @supports (background-image: url("../../img/decoration/form-s.webp")) {
     background-image: url("../../img/decoration/form-s.webp");
@@ -24,38 +24,38 @@
     font-size: 14px;
     line-height: 22px;
 
-    background-image: url(../../img/decoration/form-m.jpg);
+    background-image: url("../../img/decoration/form-m.jpg");
 
-  @supports (background-image: url("../../img/decoration/form-m.webp")) {
-    background-image: url("../../img/decoration/form-m.webp");
-  }
-
-  @media (resolution >= 2dppx) {
-    background-image: url("../../img/decoration/form-2x-m.jpg");
-
-    @supports (background-image: url("../../img/decoration/form-2x-m.webp")) {
-      background-image: url("../../img/decoration/form-2x-m.webp");
+    @supports (background-image: url("../../img/decoration/form-m.webp")) {
+      background-image: url("../../img/decoration/form-m.webp");
     }
-  }
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/decoration/form-2x-m.jpg");
+
+      @supports (background-image: url("../../img/decoration/form-2x-m.webp")) {
+        background-image: url("../../img/decoration/form-2x-m.webp");
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
 
-    background-image: url(../../img/decoration/form-l.jpg);
+    background-image: url("../../img/decoration/form-l.jpg");
 
-  @supports (background-image: url("../../img/decoration/form-l.webp")) {
-    background-image: url("../../img/decoration/form-l.webp");
-  }
-
-  @media (resolution >= 2dppx) {
-    background-image: url("../../img/decoration/form-2x-l.jpg");
-
-    @supports (background-image: url("../../img/decoration/form-2x-l.webp")) {
-      background-image: url("../../img/decoration/form-2x-l.webp");
+    @supports (background-image: url("../../img/decoration/form-l.webp")) {
+      background-image: url("../../img/decoration/form-l.webp");
     }
-  }
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/decoration/form-2x-l.jpg");
+
+      @supports (background-image: url("../../img/decoration/form-2x-l.webp")) {
+        background-image: url("../../img/decoration/form-2x-l.webp");
+      }
+    }
   }
 }
 

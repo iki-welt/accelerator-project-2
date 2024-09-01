@@ -17,10 +17,6 @@
     border-color: $base-accent;
   }
 
-  &:focus-visible {
-    border-color: $base-dark;
-  }
-
   &::placeholder {
     color: $base-dark;
     opacity: 0;
@@ -35,23 +31,6 @@
   }
 }
 
-// .form-field__inp:empty {
-//   border-color: $accent-border-color;
-
-//   &::placeholder {
-//     color: $base-disabled;
-//     opacity: 0;
-//   }
-
-//   &:hover {
-//     border-color: $base-accent;
-//   }
-
-//   &:focus-visible {
-//     border-color: $base-dark;
-//   }
-// }
-
 .form-field__inp:focus {
   outline: none;
 
@@ -62,6 +41,8 @@
 }
 
 .form-field__inp:focus-visible {
+  border-color: $base-dark;
+
   &::placeholder {
     color: $base-accent;
     opacity: 0.5;

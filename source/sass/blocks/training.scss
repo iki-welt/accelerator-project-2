@@ -1,38 +1,55 @@
 .training {
   @media (min-width: $tablet-width) {
-    background-image: url(../../img/decoration/clouds-2-m.png);
-    background-size: 465px 280px;
-    background-position: right bottom 158px;
-    background-repeat: no-repeat;
+    position: relative;
 
-    @supports (background-image: url("../../img/decoration/clouds-2-m.webp")) {
-      background-image: url("../../img/decoration/clouds-2-m.webp");
-    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 158px;
+      z-index: -1;
+      width: 465px;
+      height: 280px;
 
-    @media (resolution >=2dppx) {
-      background-image: url("../../img/decoration/clouds-2-2x-m.png");
+      background-image: url("../../img/decoration/clouds-2-m.png");
+      background-size: 465px 280px;
+      background-position: center;
+      background-repeat: no-repeat;
 
-      @supports (background-image: url("../../img/decoration/clouds-2-2x-m.webp")) {
-        background-image: url("../../img/decoration/clouds-2-2x-m.webp");
+      @supports (background-image: url("../../img/decoration/clouds-2-m.webp")) {
+        background-image: url("../../img/decoration/clouds-2-m.webp");
+      }
+
+      @media (resolution >=2dppx) {
+        background-image: url("../../img/decoration/clouds-2-2x-m.png");
+
+        @supports (background-image: url("../../img/decoration/clouds-2-2x-m.webp")) {
+          background-image: url("../../img/decoration/clouds-2-2x-m.webp");
+        }
       }
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url(../../img/decoration/clouds-2-l.png);
-    background-size: 633px 280px;
-    background-position: right bottom -4px;
-    background-repeat: no-repeat;
+    &::before {
+      bottom: -4px;
+      width: 633px;
 
-    @supports (background-image: url("../../img/decoration/clouds-2-l.webp")) {
-      background-image: url("../../img/decoration/clouds-2-l.webp");
-    }
+      background-image: url("../../img/decoration/clouds-2-l.png");
+      background-size: 633px 280px;
+      background-position: right bottom -4px;
+      background-repeat: no-repeat;
 
-    @media (resolution >=2dppx) {
-      background-image: url("../../img/decoration/clouds-2-2x-l.png");
+      @supports (background-image: url("../../img/decoration/clouds-2-l.webp")) {
+        background-image: url("../../img/decoration/clouds-2-l.webp");
+      }
 
-      @supports (background-image: url("../../img/decoration/clouds-2-2x-l.webp")) {
-        background-image: url("../../img/decoration/clouds-2-2x-l.webp");
+      @media (resolution >=2dppx) {
+        background-image: url("../../img/decoration/clouds-2-2x-l.png");
+
+        @supports (background-image: url("../../img/decoration/clouds-2-2x-l.webp")) {
+          background-image: url("../../img/decoration/clouds-2-2x-l.webp");
+        }
       }
     }
   }
@@ -43,7 +60,6 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
     padding-top: 40px;
   }
 

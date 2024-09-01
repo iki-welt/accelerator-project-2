@@ -10,10 +10,12 @@ $primary-font: "Montserrat", "Arial", sans-serif;
 $base-dark: #2d383f;
 $base-light: #ffffff;
 $base-accent: #0266c1;
+
 // overlay colors
 $burger-overlay: rgba(45, 56, 63, 0.6);
 $promo-ovelay: linear-gradient(45deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
 $tour-ovelay: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.6) 100%);
+
 // other
 $base-border-color: rgba(45, 56, 63, 0.3);
 $lighter-border-color: rgba(45, 56, 63, 0.2);
@@ -22,4 +24,4 @@ $darker-accent: #1c3374;
 $base-disabled: #999999;
 $second-gray: #d9d9d9;
 $light-05: rgba(255, 255, 255, 0.5);
-$error: #ff121f
+$error: #ff121f;
