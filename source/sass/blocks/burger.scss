@@ -10,6 +10,10 @@
   background-color: transparent;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }

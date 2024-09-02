@@ -20,7 +20,7 @@
   }
 
   &--mail::before {
-    background-size: 20px 14px;
+    background-size: 22px 16px;
     background-image: url("/__spritemap#sprite-mail-view");
   }
 
@@ -29,6 +29,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 34px;
+
     &::before {
       width: 24px;
       height: 24px;
@@ -37,6 +39,10 @@
 
     &--mail::before {
       background-size: 22px 15px;
+    }
+
+    &--address br {
+      display: none;
     }
   }
 

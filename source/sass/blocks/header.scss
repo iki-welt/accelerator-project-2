@@ -6,8 +6,8 @@
   background-color: $base-accent;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +34,7 @@
 
 .header__logo {
   @media (min-width: $tablet-width) {
+    padding-top: 2px;
     width: fit-content;
     justify-self: center;
   }

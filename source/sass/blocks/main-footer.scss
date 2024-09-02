@@ -16,7 +16,7 @@
 .main-footer__container {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 24px;
   align-items: center;
   padding-top: 23px;
   padding-bottom: 20px;
@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 142px 1fr;
-    gap: 34px 0;
+    gap: 33px 0;
     justify-items: center;
     padding-top: 34px;
   }
@@ -54,9 +54,10 @@
   @include list-default;
 
   @media (min-width: $tablet-width) {
+    justify-self: end;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
   }
 
   @media (min-width: $desktop-width) {

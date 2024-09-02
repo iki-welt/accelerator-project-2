@@ -86,6 +86,10 @@
   margin-bottom: 14px;
 
   @include font-set(24px, 28px, 700);
+
+  @media (min-width: $tablet-width) {
+    max-width: 270px;
+  }
 }
 
 .tour-slide__requirements-list {
