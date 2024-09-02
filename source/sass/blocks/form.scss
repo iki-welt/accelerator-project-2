@@ -75,8 +75,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 293px 240px;
-    gap: 20px;
+    min-height: 760px;
+    padding: 296px 240px 40px;
+    gap: 18px;
   }
 }
 
@@ -110,6 +111,7 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
@@ -160,6 +162,7 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
+    padding: 20px;
     width: 180px;
   }
 }

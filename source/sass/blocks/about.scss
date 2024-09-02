@@ -37,6 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -45px;
     margin-left: calc(-1 * (((100vw - $desktop-width) / 2) + 120px));
     max-width: calc((100vw - 660px - 120px) - (100vw - $desktop-width) / 2);
   }
@@ -85,6 +86,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 59px;
     font-size: 35px;
     line-height: 35px;
 
@@ -110,6 +113,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 16px;
     font-size: 21px;
     line-height: 21px;
   }
@@ -120,5 +125,17 @@
 
   &:not(:last-child) {
     margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 600px;
+
+    &:first-of-type {
+      max-width: 560px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 29px;
+    }
   }
 }

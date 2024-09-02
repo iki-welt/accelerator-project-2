@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 42px;
+    padding-bottom: 39px;
   }
 }
 
@@ -38,6 +38,11 @@
     width: fit-content;
     justify-self: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-bottom: -4px;
+  }
 }
 
 .header__nav {
@@ -49,6 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 33px;
     grid-column: 2/3;
     grid-row: 1/2;
   }

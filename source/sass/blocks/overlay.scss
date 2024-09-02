@@ -11,4 +11,8 @@
     width: 100vw;
     background-color: $burger-overlay;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

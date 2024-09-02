@@ -19,7 +19,7 @@ const reviewsSlider = new Swiper ('.reviews__swiper', {
       spaceBetween: 30,
     },
     1440: {
-      slidesPerView: 1.6,
+      slidesPerView: 1.61,
       spaceBetween: 120,
       allowTouchMove: false,
     },

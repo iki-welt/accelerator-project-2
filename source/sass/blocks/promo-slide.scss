@@ -36,6 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: unset;
     min-height: 800px;
     padding-top: 200px;
     padding-bottom: 80px;
