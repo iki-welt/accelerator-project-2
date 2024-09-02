@@ -22,7 +22,7 @@
 
 .about__photo {
   width: 100vw;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
   margin-left: calc(-1 * (((100vw - $mobile-width) / 2) + 15px));
   margin-right: -15px;
   overflow: hidden;
@@ -96,7 +96,7 @@
 
 .about h3 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @include font-set(16px, 16px, 700);
 

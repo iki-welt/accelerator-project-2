@@ -55,7 +55,12 @@
 }
 
 .gallery__swiper {
+  margin-left: -15px;
+  margin-right: -15px;
+
   @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 56px;
   }
 }

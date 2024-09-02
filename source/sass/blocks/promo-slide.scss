@@ -139,6 +139,7 @@
 
 .promo-slide__link {
   align-self: center;
+  min-width: 180px;
 
   @media (min-width: $desktop-width) {
     align-self: start;

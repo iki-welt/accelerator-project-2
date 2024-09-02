@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .tour-slide__about-item--timings {
@@ -42,8 +42,8 @@
 .tour-slide__description {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 0;
+  gap: 12px;
+  padding: 0;
   margin: 0;
 
   &::before {
@@ -57,9 +57,8 @@
 }
 
 .tour-slide__description--location {
-  gap: 6px;
-  padding-left: 12px;
-  padding-right: 12px;
+  gap: 4px;
+  padding: 4px 13px 4px 10px;
   background-color: $base-accent;
 
   &::before {
@@ -84,7 +83,7 @@
 
 .tour-slide__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   @include font-set(24px, 28px, 700);
 }
@@ -94,7 +93,7 @@
   display: flex;
   gap: 8px;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 16px;
 
   &::before {
     content: "";
@@ -120,7 +119,7 @@
 .tour-slide__requirements-item {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 3px;
   justify-content: space-between;
 }
 
@@ -130,13 +129,14 @@
 
 .tour-slide__requirement {
   margin: 0;
-  font-weight: 700;
+
+  @include font-set(13px, 13px, 700);
 }
 
 .tour-slide__requirement--difficulty {
   display: flex;
-  height: 16px;
-  width: 80px;
+  height: 17px;
+  width: 85px;
 
   --count-star: 1;
 
@@ -145,11 +145,11 @@
     content: "";
     display: block;
     background-repeat: space;
-    background-size: 16px 16px;
+    background-size: 17px 17px;
   }
 
   &::before {
-    width: calc(var(--count-star) * 16px);
+    width: calc(var(--count-star) * 17px);
     background-image: url("/__spritemap#sprite-fill-star-view");
   }
 

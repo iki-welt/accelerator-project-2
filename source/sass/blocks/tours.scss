@@ -72,7 +72,7 @@
 }
 
 .tours__container {
-  padding-top: 36px;
+  padding-top: 39px;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -87,7 +87,7 @@
 }
 
 .tours__title {
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: -35px;
@@ -139,7 +139,7 @@
   margin-right: auto;
   padding: 10px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
 
   @include link-default;
   @include font-set(14px, 14px, 700);

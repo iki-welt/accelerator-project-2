@@ -15,23 +15,25 @@
 }
 
 .hero__pagination {
-  display: none;
+  position: absolute;
+  right: 50%;
+  bottom: 40px;
+  transform: translate(50%, 0);
+  z-index: 1;
+  display: flex;
+  gap: 20px;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 1;
-    bottom: 92px;
     right: 0;
+    bottom: 92px;
     transform: translate(calc((((100vw - $desktop-width) / 2) + 120px) * -1), 0);
-    display: flex;
-    gap: 20px;
   }
 }
 
 .hero__pagination-bullet {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 1px solid $base-light;
   border-radius: 10px;
   cursor: pointer;
@@ -58,8 +60,8 @@
       position: absolute;
       top: -3px;
       left: -3px;
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       background-color: transparent;
       border: 1px solid $light-05;
       border-radius: 11px;
@@ -68,5 +70,17 @@
 
   &:active {
     background-color: $light-05;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 20px;
+    height: 20px;
+
+    &:focus-visible {
+      &::after {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 }
